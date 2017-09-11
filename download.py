@@ -3,7 +3,7 @@ import requests
 import re
 headers = {
     # 自行修改
-    'Cookie': 'UM_distinctid=15e6f0a8d67fb-01c3287b338fea-3c310551-100200-15e6f0a8d6828; CNZZDATA1254124561=1559124444-1505101164-http%253A%252F%252Fujs.91job.gov.cn%252F%7C1505117383; PHPSESSID2=taqp5pjj99llgli1dour6t4nc1',
+    'Cookie': 'UM_distinctid?????????QAQ???????wangjishanle59124444-1505101164-http%253A%252F%252Fujs.91job.gov.cn%252F%7C1505117383; PHPSESSID2=taqp5pjj99llgli1dour6t4nc1',
 }
 bt = 100
 url = 'http://ujs.91job.gov.cn/contest/question?page='
