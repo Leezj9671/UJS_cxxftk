@@ -1,3 +1,4 @@
+# 建议在中文环境下运行，否则会出现codec错误
 import requests
 import re
 
@@ -66,7 +67,7 @@ jjurl = re.findall('<a(.*?) href="(.*?)">交(.*?)卷</a>', html, re.S)
 if jjurl != []:
     jjurl = burl + jjurl[0][1]
     html = s.get(jjurl)
-print('ok')
+print('答题完毕')
 html = s.get(url).text
 score = re.findall('<b><font color="red">(.*?)</font></b>', html)
 if score != []:
