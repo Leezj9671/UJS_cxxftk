@@ -37,11 +37,17 @@ def run(username):
     cnt = 0
     nxtu = s.get(url).url
     while True:
-        cnt += 1
         html = s.get(nxtu).text
-        tid = re.findall('tid=(\d+)', nxtu)[0]
-        title = re.findall('<b><font color="red">(.*?)</font><br/>&nbsp;&nbsp;&nbsp;(.*?)</b>', html, re.S)[0][1]
+
+        try:
+            tid = re.findall('tid=(\d+)', nxtu)[0]
+            title = re.findall('<b><font color="red">(.*?)</font><br/>&nbsp;&nbsp;&nbsp;(.*?)</b>', html, re.S)[0][1]
+        except:
+            print(username, ' is error')
+            return
+
         data = {'tid': tid}
+        cnt += 1
 
         try:
             ans = ansdict[title.strip()]
