@@ -3,10 +3,7 @@ import requests
 import re
 from time import sleep
 
-burl = 'http://nuist.91job.gov.cn'
-startusername = 3140604015
-endusername = 3140604016
-pausetime = 1
+from config import burl, startusername, endusername, pausetime
 
 def run(username):
     password = username[-6:] if username else ''
