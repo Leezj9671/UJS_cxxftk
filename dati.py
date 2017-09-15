@@ -76,8 +76,7 @@ def run(username):
     print(username, '答题完毕')
     html = s.get(url, headers=headers).text
     score = re.findall('<b><font color="red">(.*?)</font></b>', html)
-    if not score:
-        print(username, score[0], score[1])
+    print(username, score[0], score[1])
 
 if __name__ == '__main__':
     for username in range(startusername, endusername):

@@ -6,7 +6,6 @@ ansdict = {}
 title = ''
 with open('tiku.txt', 'r') as f:
     for line in f.readlines():
-        print(line)
         if istitle:
             title = line.strip()
             istitle = False
