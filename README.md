@@ -2,7 +2,7 @@
 - 功能：抓创新学分题库，自动答题并提交
 - 适用于2017全江苏省使用该系统答题的学校
 ## USAGE
-- 修改dati.py学号
+- 修改config.py的配置
 ```bash
 python3 dati.py
 ```
