@@ -4,9 +4,9 @@ findans = False
 istitle = False
 ansdict = {}
 title = ''
-with open('tiku.txt', 'rb') as f:
+with open('tiku.txt', 'r') as f:
     for line in f.readlines():
-        line = line.decode('utf-8')
+        print(line)
         if istitle:
             title = line.strip()
             istitle = False
